@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Modern Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/management.css">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" rel="home" href="index.html" title="Future Inc">
+          <img style="max-width:40px; margin-top: -7px;" src="images/img/logo2.png">
+        </a>
+        <a style="color:#FFFFFF" class="navbar-brand" href="#">
+          <strong>AFTER EFFECTS</strong>
+        </a>
+      </div>
+      <div>
+        <ul class="nav navbar-nav pull-right">
+          <li class="active"><a href="home.ejs">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a>Mobile</a></li>
+              <li><a href="bigdata.ejs">Big Data</a></li>
+              <li><a href="ioe-iot.ejs">IoE/IoT</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="management.ejs">Management</a></li>
+              <li><a>Code of Conduct</a></li>
+              <li><a>Business Process</a></li>
+              <li><a href="location.ejs">Locations</a></li>
+              <li><a>Contacts</a></li>
+            </ul>
+          </li>
+          <li><a href="index.ejs">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <br>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+   <br>
+       <div id="w">
+
+
+  <center>
+                  <h1>Management</h1>
+
+
+                  <p>Visionary data scientists. Accomplished industry veterans. Trusted advisors. Proven investors. OurCo is led by a world-class team that believes in data's potential to change the world. Our company is proud to be backed by Intel Capital, Investor Growth Capital (IGC), QuestMark Partners, Goldman Sachs, TransLink Capital and other strategic investors.</p>
+
+              </center>
+
+
+
+
+    <div id="content">
+      <div class="thumbs">
+        <ul class="clearfix">
+          <li><a href="" target="_blank"><img src="images/pbu.jpg" height="200" width="150" data-fullsize="images/pbu.jpg" class="thumbimg" alt="CEO & founder name" data-date="Description"></a><meta class="desc" content="CEO & founder"></li>
+
+           <li><a href="" target="_blank"><img src="images/deen.jpg" height="200" width="150" data-fullsize="images/deen.jpg" class="thumbimg" alt="CEO & founder name" data-date="Description"></a><meta class="desc" content="CEO & founder"></li>
+
+            <li><a href="" target="_blank"><img src="images/avi.jpg" height="200" width="150" data-fullsize="images/avi.jpg" class="thumbimg" alt="CEO & founder name" data-date="Description"></a><meta class="desc" content="CEO & founder"></li>
+
+
+
+             <li><a href="" target="_blank"><img src="images/adi.jpg" height="200" width="150" data-fullsize="images/adi.jpg" class="thumbimg" alt="CEO & founder name" data-date="Description"></a><meta class="desc" content="CEO & founder"></li>
+
+
+              <li><a href="" target="_blank"><img src="images/sat.jpg" height="200" width="150" data-fullsize="images/sat.jpg" class="thumbimg" alt="CEO & founder name" data-date="Description"></a><meta class="desc" content="CEO & founder"></li>
+
+
+      </div>
+
+      <!-- setup details pane template -->
+       <div id="details-pane" style="display: none;">
+             <div class="big-img"><a href="" target="_blank"><img class="bigimg" src=""></a></div>
+                    <div class="pull-left">
+                      <span class="testimonials-name"><h3 class="title"></h3></span>
+                      <span class="testimonials-post"><p class="desc"></span>
+                    </div>
+                  </div>
+      </div><!-- @end #details-pane
+    </div><!-- @end #content -->
+  </div><!-- @end #w -->
+
+
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+$(function(){
+  $('.thumbs ul li img').on('mouseover', function(e){
+    var dpane      = $('#details-pane');
+    var dpanetitle = $('#details-pane .title');
+    var dpanedesc  = $('#details-pane .desc');
+    var newtitle   = $(this).attr('alt');
+    var newdate    = $(this).attr('data-date');
+    var newdesc    = $(this).parent().next('meta.desc').attr('content');
+    var newimg     = $(this).attr('data-fullsize');
+    var linkurl    = $(this).parent().attr('href');
+
+    var position = $(this).offset();
+    var imgwidth = $(this).width();
+    var ycoord   = position.top;
+    if(position.left / $(window).width() >= 0.5) {
+      var xcoord = position.left - 530;
+      // details pane is 530px fixed width
+      // if the img position is beyond 50% of the page, we move the pane to the left side
+    } else {
+      var xcoord = position.left + imgwidth;
+    }
+
+    $('.big-img a').attr('href',linkurl);
+    $('.big-img a img').attr('src',newimg);
+
+    var titlehtml = newtitle + '<span>('+newdate+')</span>';
+
+    dpanetitle.html(titlehtml);
+    dpanedesc.html(newdesc);
+    dpane.css({ 'left': xcoord, 'top': ycoord, 'display': 'block'});
+
+  }).on('mouseout', function(e){
+    $('#details-pane').css('display','none');
+  });
+
+  // when hovering the details pane keep displayed, otherwise hide
+  $('#details-pane').on('mouseover', function(e){
+    $(this).css('display','block');
+  });
+  $('#details-pane').on('mouseout', function(e){
+    //this is the original element the event handler was assigned to
+    var e = e.toElement || e.relatedTarget;
+    if (e.parentNode == this || e.parentNode.parentNode == this || e.parentNode.parentNode.parentNode == this || e == this || e.nodeName == 'IMG') {
+      return;
+    }
+    $(this).css('display','none');
+    //console.log(e.nodeName)
+  });
+});
+</script>
+
+
+</body>
+
+</html>

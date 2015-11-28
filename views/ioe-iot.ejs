@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Modern Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/c3.min.css">
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="js/c3.min.js"></script>
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<style type="text/css">
+.modal-header {
+	padding-bottom: 5px;
+}
+
+.modal-footer {
+	padding: 0;
+}
+
+.modal-footer .btn-group button {
+	height: 400px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border: none;
+}
+
+.modal-footer .btn-group:last-child>button {
+	border-right: 0;
+}
+
+.center {
+	margin-top: 50px;
+}
+.mainheader.maincontent{
+	font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+	font-size: 50px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	text-align: center;
+}
+
+.maincontent {
+	font-size: 20px;
+	
+}
+</style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" rel="home" href="index.html" title="Future Inc">
+          <img style="max-width:40px; margin-top: -7px;" src="images/img/logo2.png">
+        </a>
+        <a style="color:#FFFFFF" class="navbar-brand" href="#">
+          <strong>AFTER EFFECTS</strong>
+        </a>
+      </div>
+      <div>
+        <ul class="nav navbar-nav pull-right">
+          <li class="active"><a href="home.ejs">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a>Mobile</a></li>
+              <li><a href="bigdata.ejs">Big Data</a></li>
+              <li><a href="ioe-iot.ejs">IoE/IoT</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="management.ejs">Management</a></li>
+              <li><a>Code of Conduct</a></li>
+              <li><a>Business Process</a></li>
+              <li><a href="location.ejs">Locations</a></li>
+              <li><a>Contacts</a></li>
+            </ul>
+          </li>
+          <li><a href="index.ejs">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+       <br>
+       <br>
+        <div class="row">
+
+
+
+           <div class="col-md-2" >
+				<table style="height: 100%; width: 100%" border="0">
+				<tr>
+					<td></td>
+					<td style="height: 20%"></td>
+				</tr>
+				<tr>
+					<td style="height: 150px"></td>
+				</tr>
+				<tr>
+					<td><div data-toggle="modal" data-target="#squarespaceModal">
+
+							<img alt="Click to Download White Paper"  height="100" width="100"
+								src="images/white.jpg">
+						</div></td>
+				</tr>
+				<tr>
+					<td style="height: 100px"></td>
+				</tr>
+				<tr>
+					<td><a id="broc" target="_blank" href="images/IoTbrocher.pdf" ><img
+							alt="Click to Download our Brochure"  height="80" width="100" src="images/broc.png"></a> 
+					</a></td>
+				</tr>
+			</table>
+           </div>
+
+
+           <div class="col-md-7">
+              <div>
+				<h1 class="mainheader" style="text-align: center">Internet of
+					SMART things</h1>
+
+				<h4 style="text-align: justify">WeUI IoT is a managed cloud
+					platform that lets connected devices easily and securely interact
+					with cloud applications and other devices. WeUI IoT can support
+					billions of devices and trillions of messages, and can process and
+					route those messages to WeUI endpoints and to other devices
+					reliably and securely. With WeUI IoT, your applications can keep
+					track of and communicate with all your devices, all the time, even
+					when they aren’t connected.</h4><br>
+				<h4>At WeUI Inc., we connect the unconnected with an
+					open-standard, integrated architecture from the cloud to end
+					devices with exceptional reliability and security. We provide
+					industry-specific solutions that can improve productivity and
+					operational efficiency today, while laying the foundations for
+					tomorrow's IoT opportunities.</h4>
+				<h2 style="text-align: left">Our offer pricing..</h2>
+				<div class="row" style="height: 0%;">
+					<div class="col-md-6">
+						<div id="chart1"></div>
+						<div align="center"><h4>No of Sensors : 50</h4></div>
+						<div align="center"><h4>Price : $60</h4></div>
+						
+					</div>
+					<div class="col-md-6">
+						<div id="chart2"></div>
+						<div align="center"><h4>No of Sensors : 30</h4></div>
+						<div align="center"><h4>Price : $35</h4></div>
+					</div>
+				</div>
+				
+			</div>
+          </div>
+
+          <div class="col-md-3">
+           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width: 350px">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" style="width: 350px">
+                <div class="item active">
+                    <div class="carousel-caption">
+                        <h4>Name: After Effects</h4>
+                        <br>
+                        <p>This was really awesome we enjoyed to the coe! looking fowward for this again!</p>
+                        <p>My ratings is  <img class="img-responsive" src="images/rate.png" alt=""></p>
+
+                     </div>
+                     <img class="img-responsive" src="images/cor.jpg" alt="">
+                 </div>
+                 <div class="item">
+                    <div class="carousel-caption">
+                        <h4>Name: After Effects</h4>
+                        <br>
+                        <p>This was really awesome we enjoyed to the coe! looking fowward for this again!</p>
+                        <p>My ratings is  <img class="img-responsive" src="images/rate.png" alt=""></p>
+
+                     </div>
+                   <img class="img-responsive" src="images/cor2.jpg" alt="">
+               </div>
+               <div class="item">
+                <div class="carousel-caption">
+                        <h4>Name: After Effects</h4>
+                        <br>
+                        <p>This was really awesome we enjoyed to the coe! looking fowward for this again!</p>
+                        <p>My ratings is  <img class="img-responsive" src="images/rate.png" alt=""></p>
+
+                     </div>
+                   <img class="img-responsive" src="images/cor3.png" alt="">
+
+               </div>
+           </div>
+
+           <!-- Controls -->
+           <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+
+</div>
+
+<hr>
+
+<div class="modal fade alert" id="squarespaceModal" tabindex="-1"
+		role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">x</span><span class="sr-only">Close</span>
+					</button>
+					<h3 class="modal-title" id="lineModalLabel">Download White
+						Paper</h3>
+				</div>
+				<div class="modal-body">
+				<div class="row">
+        			
+       				 <div class="col-sm-9">
+					
+						<div class="form-group">
+							<label class="control-label col-sm-4" for="fname">First Name:</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" id="fname" 
+									placeholder="Enter First Name">
+							</div>
+						</div>
+						<br><br>
+						<div class="form-group">
+							<label class="control-label col-sm-4" for="lname">Last Name:</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" id="lname"
+									placeholder="Enter Last Name">
+							</div>
+						</div>
+						<br><br>
+						<div class="form-group">
+							<label class="control-label col-sm-4" for="email">Email:</label>
+							<div class="col-sm-8">
+								<input type="email" class="form-control" id="email"
+									placeholder="Enter your email">
+							</div>
+						</div>
+						<br><br>
+						<div class="form-group">
+							<div class="col-sm-offset-4 col-sm-8">
+								<button class="btn btn-success" onclick="submit()">Download</button>
+							</div>
+						</div>
+					
+					</div>
+					<div class="col-sm-3"><a id="white" target="_blank" href="images/IoTbrocher.pdf" ></a>
+            				<img alt="Click to Download our Brochure"  height="100" width="100" src="images/download.jpg">
+       				 </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="blockscreen" class="box" style="display: none"></div>
+
+<!-- Footer -->
+ <footer>
+ 	<hr>
+            <div class="row">
+                <div class="col-lg-12">
+<h2>Twitter News</h2>
+
+<a class="twitter-timeline" href="https://twitter.com/hashtag/iot" data-widget-id="661049762544619520" width='1500' height='200'>#iot Tweets</a>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<br>
+
+
+
+
+
+
+<hr>
+                    <p>Copyright &copy; Your Website 2015</p>
+                </div>
+            </div>
+        </footer>
+
+</div>
+
+<script type="text/javascript">
+		function toggleWhitePaperPopUp() {
+			$("#blockscreen").show();
+			$("#downloadWhite").show();
+
+		}
+		function closePopUp() {
+			$("#downloadWhite").hide();
+			$("#blockscreen").hide();
+
+		}
+		
+		var chart1 = c3.generate({
+			bindto: "#chart1",
+		    data: {
+		        columns: [
+		            ['Mbps', ]
+		        ],
+		        type: 'gauge',
+		        onclick: function (d, i) { console.log("onclick", d, i); },
+		        onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+		        onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+		    },
+		    gauge: {
+		        label: {
+		            format: function(value, ratio) {
+		                return value;
+		            },
+		        },
+		    min: 0, // 0 is default, //can handle negative min e.g. vacuum / voltage / current flow / rate of change
+		    max: 100, // 100 is default
+		    units: 'Mbps',
+		    width: 90 // for adjusting arc thickness
+		    },
+		    color: {
+		        pattern: ['#FF0000', '#F97600', '#F6C600', '#60B044'], // the three color levels for the percentage values.
+		        threshold: {
+		            unit: 'value', // percentage is default
+		            max: 120, // 100 is default
+		            values: [10, 30, 60, 70]
+		        }
+		    },
+		    size: {
+		        height: 180
+		    }
+		});
+		
+		var chart2 = c3.generate({
+			bindto: "#chart2",
+		    data: {
+		        columns: [
+		            ['Mbps', ]
+		        ],
+		        type: 'gauge',
+		        onclick: function (d, i) { console.log("onclick", d, i); },
+		        onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+		        onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+		    },
+		    gauge: {
+		        label: {
+		            format: function(value, ratio) {
+		                return value;
+		            },
+		        },
+		    min: 0, // 0 is default, //can handle negative min e.g. vacuum / voltage / current flow / rate of change
+		    max: 100, // 100 is default
+		    units: 'Mbps',
+		    width: 90 // for adjusting arc thickness
+		    },
+		    color: {
+		        pattern: ['#FF0000', '#F97600', '#F6C600', '#60B044'], // the three color levels for the percentage values.
+		        threshold: {
+		            unit: 'value', // percentage is default
+		            max: 120, // 100 is default
+		            values: [10, 30, 60, 70]
+		        }
+		    },
+		    size: {
+		        height: 180
+		    }
+		});
+		
+		
+		setInterval(function () {
+			var defaultVal=60;
+			var random = Math.floor(Math.random() * 6) + 1
+		    chart1.load({
+		        columns: [['data', defaultVal+random]]
+		    });
+		}, 100);
+		
+		setInterval(function () {
+			var defaultVal=35;
+			var random = Math.floor(Math.random() * 6) + 1
+		    chart2.load({
+		        columns: [['data', defaultVal+random]]
+		    });
+		}, 100);
+		
+		
+		function submit()
+	{
+			
+		var fname = $("#fname").val();
+		var lname = $("#fname").val();
+		var email =  $("#email").val();
+		
+		$.post("/downloadBroc",
+    	{
+	        fname: fname,
+	        lname: lname,
+	        email: email
+   		 },
+	    function(data, status){
+	        console.log("Data: " + data + "\nStatus: " + status);
+	        
+	        document.getElementById("broc").download;
+	        
+	    });
+	}
+		
+		
+		
+	</script>
+
+</body>
+
+</html>
